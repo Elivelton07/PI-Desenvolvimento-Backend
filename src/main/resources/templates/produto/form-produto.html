@@ -23,9 +23,10 @@
 
 	<header>
 
-		<nav class="navbar navbar-expand-lg navbar-dark" style= "background-color: red;">
+		<nav class="navbar navbar-expand-lg navbar-dark"
+			style="background-color: red;">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/">ExxonMobill</a>
+				<a class="navbar-brand" href="/">ExxonMobil</a>
 				<button class="navbar-toggler" type="button"
 					data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false"
@@ -36,21 +37,12 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link active"
 							aria-current="page" href="/">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="/funcionarios">Funcionários</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="/produtos">
+								Listar Produtos </a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="/cadastrarFuncionario">Cadastrar Funcionário</a></li>
-						<li class="nav-item"><a class="nav-link" href="/vagas">
-								 Listar Vagas </a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="/cadastrarVaga">  Cadastrar Vaga </a></li>
-											<li class="nav-item"><a class="nav-link" href="/empresas">
-								Listar Empresas
-							</a></li>
-						<li class="nav-item"><a class="nav-link" href="/cadastrarEmpresa">
-								Cadastrar Empresa
-							</a></li>
-						<li class="nav-item"><a class="nav-link" href="/logout">Sair
-						</a></li>
+							href="/cadastrarProduto"> Cadastrar Produto </a></li>
+
 					</ul>
 				</div>
 			</div>
@@ -62,7 +54,7 @@
 
 	<div class="container">
 
-		<h1>Cadastrar vaga</h1>
+		<h1>Cadastrar Produto</h1>
 
 		<br>
 
@@ -73,47 +65,57 @@
 
 
 			<div class="form-group">
-				<label for=""><b>Nome do cargo:</b> </label> <input type="text"
-					class="form-control" value="" placeholder="Insira o nome do cargo"
-					name="nome" required> <small class="form-text text-muted"><i>*
-						Utilize nomes e termos mais utilizados no mercado.</i></small>
+				<label for=""><b>Nome do Produto: </b> </label> <input type="text"
+					class="form-control" value=""
+					placeholder="Insira a descrição do produto" name="nome" required>
+				<small class="form-text text-muted"><i>* Utilize nomes e
+						termos mais utilizados no mercado.</i></small>
 			</div>
 
 			<div class="row">
 				<div class="col">
 
 					<div class="form-group">
-						<label for=""><b>Data de expiração:</b></label> <input type="date"
-							value="" name="data" class="form-control" required /> <small
-							class="form-text text-muted"><i>* Data em que a vaga
-								expira.</i></small>
+						<label for=""><b>Data de Fabriação: </b></label> <input
+							type="date" value="" name="fabricacao" class="form-control"
+							required /> <small class="form-text text-muted"><i>*
+								Data de Fabriação.</i></small>
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
-						<label for=""><b>Salário:</b></label> R$ <input type="number"
-							pattern="^\d+(\.|\,)\d{2}$" value="" name="salario"
-							class="form-control" required /> <small
-							class="form-text text-muted"><i>* Utilize valores
-								considerando vírgula e ponto.</i></small>
+						<label for=""><b>Quantidade: </b></label> <input type="number"
+							value="" name="quantidade" class="form-control" required /> <small
+							class="form-text text-muted"><i>*Qtd</i></small>
 					</div>
 
 				</div>
+
+				<div class="col">
+
+					<div class="form-group">
+						<label for=""><b>Lote: </b></label> <input type="number" value=""
+							name="lote" class="form-control" required /> <small
+							class="form-text text-muted"><i>* Lote.</i></small>
+					</div>
+				</div>
+
 			</div>
 
 
 			<div class="form-group">
 
-				<label for=""><b>Descrição da vaga:</b></label>
+				<label for=""><b>Descrição sobre o produto:</b></label>
 				<textarea class="form-control" name="descricao" maxlength="254"
 					rows="3" required></textarea>
-				<small class="form-text text-muted"><i>* Breve resumo da
-						vaga oferecida..</i></small>
+				<small class="form-text text-muted"><i>* Breve resumo do
+						produto oferecido.</i></small>
 
 			</div>
 
 
-			<button type="submit" class="btn btn-success">Adicionar Vaga</button>
+			<button type="submit" class="btn btn-success">Adicionar
+				Produto</button>
 
 		</form>
 
@@ -122,8 +124,10 @@
 
 	<div style="height: 100px;"></div>
 
-	<div class="footer-copyright fixed-bottom text-center py-3" style= "background-color: red;">
-		<span class="text-light align-middle">ExxonMobill 2022</span>
+	<div class="footer-copyright fixed-bottom text-center py-3"
+		style="background-color: red;">
+		<span class="text-light align-middle">ExxonStock © 2022
+			Copyright: ExxonMobil UC 12</span>
 	</div>
 
 

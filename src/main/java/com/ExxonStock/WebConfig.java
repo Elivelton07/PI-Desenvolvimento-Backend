@@ -1,4 +1,4 @@
-package com.AppRH.AppRH;
+package com.ExxonStock;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,7 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
 		
 		http
 		.authorizeRequests().antMatchers("/").permitAll()
-		.antMatchers("/vagas**").permitAll()
+		.antMatchers("/produtos**").permitAll()
 		.antMatchers("/home**").permitAll().anyRequest()
 		.authenticated().and().formLogin().permitAll()
 		.and().logout().permitAll()
